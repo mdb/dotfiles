@@ -86,6 +86,7 @@ au BufNewFile,BufRead *.jbuilder set syn=ruby
 au BufNewFile,BufRead *.pp set syn=ruby
 au BufNewFile,BufRead *.json set syn=javascript
 au BufNewFile,BufRead *.bats set syn=sh
+au BufNewFile,BufRead *.tfvars set syn=tf
 
 " rainbow_parentheses.vim
 autocmd VimEnter * RainbowParenthesesToggle
@@ -143,3 +144,6 @@ set paste
 set hlsearch
 set ignorecase
 nmap <silent> ,/ :nohlsearch<CR>
+
+" fzf
+set rtp+=/usr/local/opt/fzf
