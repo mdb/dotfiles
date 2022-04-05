@@ -1,0 +1,24 @@
+# gh-dash config
+# https://github.com/dlvhdr/gh-dash
+# Typically lives in ~/Library/Application\ Support/gh-dash on Mac OS
+prSections:
+- title: My Pull Requests
+  filters: is:open author:@me
+- title: Needs My Review
+  filters: is:open review-requested:@me
+- title: GTA Team PRs
+  filters: is:open type:pr label:gta-project
+- title: Involves me
+  filters: type:pr involves:@me
+issuesSections:
+- title: Created
+  filters: is:open author:@me
+- title: Assigned
+  filters: is:open assignee:@me
+defaults:
+  preview:
+    open: true
+    width: 50
+  prsLimit: 20
+  issuesLimit: 20
+  view: prs
