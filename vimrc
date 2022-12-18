@@ -5,7 +5,7 @@ Plug 'kien/ctrlp.vim'
 Plug 'airblade/vim-gitgutter'
 Plug 'kien/rainbow_parentheses.vim'
 Plug 'scrooloose/nerdtree'
-Plug 'scrooloose/syntastic'
+Plug 'dense-analysis/ale'
 Plug 'tpope/vim-sleuth'
 
 " Scala
@@ -118,8 +118,25 @@ let g:ctrlp_prompt_mappings = {
   \ }
 
 let g:rbpt_max = len(g:rbpt_colorpairs)
-let g:syntastic_go_checkers = ['go', 'golint', 'errcheck']
-let g:syntastic_javascript_checkers = ['eslint']
+
+" ALE
+let g:ale_echo_msg_format = '[%linter%] %severity% %s'
+let g:ale_fix_on_save = 1
+let g:ale_javascript_prettier_use_local_config = 1
+let g:ale_lint_on_text_changed = 'never'
+let g:ale_sign_error = '!'
+let g:ale_sign_warning = '?'
+
+let g:ale_fixers = {}
+let g:ale_fixers['javascript'] = ['prettier', 'importjs']
+
+let g:ale_linters = {}
+let g:ale_linters['go'] = ['go build', 'go vet', 'golangci-lint']
+let g:ale_linters['html'] = []
+let g:ale_linters['ruby'] = ['ruby']
+let g:ale_linters['sh'] = ['shellcheck']
+let g:ale_linters['sql'] = ['sqlint']
+let g:ale_linters['vim'] = ['vint']
 
 " jump to a matching opening or closing parenthesis, square bracket or a curly brace
 noremap % v%
