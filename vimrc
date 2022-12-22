@@ -3,28 +3,10 @@ call plug#begin('~/.vim/plugged')
 
 Plug 'kien/ctrlp.vim'
 Plug 'airblade/vim-gitgutter'
+Plug 'kien/rainbow_parentheses.vim'
 Plug 'scrooloose/nerdtree'
 Plug 'dense-analysis/ale'
 Plug 'tpope/vim-sleuth'
-
-Plug 'kien/rainbow_parentheses.vim'
-autocmd VimEnter * RainbowParenthesesToggle
-autocmd Syntax * RainbowParenthesesLoadRound
-autocmd Syntax * RainbowParenthesesLoadSquare
-autocmd Syntax * RainbowParenthesesLoadBraces
-let g:rbpt_colorpairs = [
-  \ ['lightblue',  'lightblue'],
-  \ ['lightgreen', 'lightgreen'],
-  \ ['lightred',   'lightred'],
-  \ ['darkblue',   'darkblue'],
-  \ ['darkgreen',  'darkgreen'],
-  \ ['darkred',    'darkred'],
-  \ ['blue',       'blue'],
-  \ ['green',      'green'],
-  \ ['red',        'red'],
-  \ ]
-let g:rbpt_colorpairs = g:rbpt_colorpairs + g:rbpt_colorpairs
-let g:rbpt_max = len(g:rbpt_colorpairs)
 
 " Scala
 Plug 'derekwyatt/vim-scala'
@@ -106,6 +88,25 @@ au BufNewFile,BufRead *.json set syn=javascript
 au BufNewFile,BufRead *.cjs set syn=javascript
 au BufNewFile,BufRead *.bats set syn=sh
 au BufNewFile,BufRead *.tfvars set syn=tf
+
+" rainbow_parentheses.vim
+autocmd VimEnter * RainbowParenthesesToggle
+autocmd Syntax * RainbowParenthesesLoadRound
+autocmd Syntax * RainbowParenthesesLoadSquare
+autocmd Syntax * RainbowParenthesesLoadBraces
+let g:rbpt_colorpairs = [
+  \ ['lightblue',  'lightblue'],
+  \ ['lightgreen', 'lightgreen'],
+  \ ['lightred',   'lightred'],
+  \ ['darkblue',   'darkblue'],
+  \ ['darkgreen',  'darkgreen'],
+  \ ['darkred',    'darkred'],
+  \ ['blue',       'blue'],
+  \ ['green',      'green'],
+  \ ['red',        'red'],
+  \ ]
+let g:rbpt_colorpairs = g:rbpt_colorpairs + g:rbpt_colorpairs
+let g:rbpt_max = len(g:rbpt_colorpairs)
 
 " CTRL-P opens in tab
 let g:ctrlp_prompt_mappings = {
