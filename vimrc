@@ -7,6 +7,7 @@ Plug 'kien/rainbow_parentheses.vim'
 Plug 'scrooloose/nerdtree'
 Plug 'dense-analysis/ale'
 Plug 'tpope/vim-sleuth'
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 " Scala
 Plug 'derekwyatt/vim-scala'
