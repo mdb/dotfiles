@@ -129,7 +129,7 @@ let g:ale_fixers = {}
 let g:ale_fixers['javascript'] = ['prettier', 'importjs']
 
 let g:ale_linters = {}
-let g:ale_linters['go'] = ['go build', 'go vet', 'golangci-lint']
+let g:ale_linters['go'] = ['go build', 'go vet']
 let g:ale_linters['html'] = []
 let g:ale_linters['ruby'] = ['ruby']
 let g:ale_linters['sh'] = ['shellcheck']
