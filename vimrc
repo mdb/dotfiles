@@ -161,5 +161,9 @@ set hlsearch
 set ignorecase
 nmap <silent> ,/ :nohlsearch<CR>
 
+" 80-column line
+set colorcolumn=81
+highlight! link ColorColumn CursorColumn
+
 " fzf
 set rtp+=/usr/local/opt/fzf
