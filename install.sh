@@ -29,6 +29,7 @@ ln -s "${DOTFILES}/gitconfig" "${HOME}/.gitconfig"
 ln -s "${DOTFILES}/vimrc" "${HOME}/.vimrc"
 ln -s "${DOTFILES}/jshintrc" "${HOME}/.jshintrc"
 ln -s "${DOTFILES}/init.vim" "${HOME}/.config/nvim/init.vim"
+ln -s "${DOTFILES}/coc-settings.json" "${HOME}/.config/nvim/coc-settings.json"
 
 if [ ! -d "${HOME}/bin" ]; then
   mkdir -p "${HOME}/bin";
