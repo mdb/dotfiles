@@ -51,11 +51,11 @@ call plug#end()
 
 syntax on
 
-" Golang
+" Go
 let g:go_fmt_command = "goimports"
 autocmd FileType go set listchars=tab:\ \ ,trail:·,extends:>,precedes:<
 
-"gg=G to reformat ugly XML
+" gg=G to reformat ugly XML
 au FileType xml setlocal equalprg=xmllint\ --format\ --recover\ -\ 2>/dev/null
 
 " highlight trailing whitespace
@@ -68,16 +68,21 @@ autocmd BufWinLeave * call clearmatches()
 highlight OverLength ctermbg=Magenta ctermfg=white guibg=#592929
 match OverLength /\%81v./
 
+" 80-column line
+set colorcolumn=81
+highlight! link ColorColumn CursorColumn
+
 " Show dotfiles in NERDTree
 let NERDTreeShowHidden=1
 
+" tab navigation & creation
+" C- represents the Control key
 map <C-l> :tabn<CR>
 map <C-h> :tabp<CR>
 map <C-n> :tabnew<CR>
 
+" syntax highlighting for non-standard file extensions
 au BufNewFile,BufRead *.rhtml set syn=eruby
-au BufNewFile,BufRead *.ftl set syn=ftl
-au BufNewFile,BufRead *.pde set syn=pde
 au BufNewFile,BufRead Rakefile set syn=ruby
 au BufNewFile,BufRead Gemfile set syn=ruby
 au BufNewFile,BufRead config.ru set syn=ruby
@@ -85,6 +90,8 @@ au BufNewFile,BufRead Vagrantfile set syn=ruby
 au BufNewFile,BufRead *.builder set syn=ruby
 au BufNewFile,BufRead *.jbuilder set syn=ruby
 au BufNewFile,BufRead *.pp set syn=ruby
+au BufNewFile,BufRead *.ftl set syn=ftl
+au BufNewFile,BufRead *.pde set syn=pde
 au BufNewFile,BufRead *.json set syn=javascript
 au BufNewFile,BufRead *.cjs set syn=javascript
 au BufNewFile,BufRead *.bats set syn=sh
@@ -115,19 +122,15 @@ let g:ctrlp_prompt_mappings = {
   \ 'AcceptSelection("t")': ['<cr>', '<c-m>'],
   \ }
 
-let g:rbpt_max = len(g:rbpt_colorpairs)
-
-" ALE
+" ale
 let g:ale_echo_msg_format = '[%linter%] %severity% %s'
 let g:ale_fix_on_save = 1
 let g:ale_javascript_prettier_use_local_config = 1
 let g:ale_lint_on_text_changed = 'never'
 let g:ale_sign_error = '!'
 let g:ale_sign_warning = '?'
-
 let g:ale_fixers = {}
 let g:ale_fixers['javascript'] = ['prettier', 'importjs']
-
 let g:ale_linters = {}
 let g:ale_linters['go'] = ['go build', 'go vet']
 let g:ale_linters['html'] = []
@@ -154,16 +157,11 @@ set list
 set mouse=a
 set nobackup
 set noswapfile
-set paste
 
 " Searching
 set hlsearch
 set ignorecase
 nmap <silent> ,/ :nohlsearch<CR>
-
-" 80-column line
-set colorcolumn=81
-highlight! link ColorColumn CursorColumn
 
 " fzf
 set rtp+=/usr/local/opt/fzf
