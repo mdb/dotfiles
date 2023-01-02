@@ -165,3 +165,9 @@ nmap <silent> ,/ :nohlsearch<CR>
 
 " fzf
 set rtp+=/usr/local/opt/fzf
+
+" coc
+" 'Ctrl + space' (in insert) opens suggestions
+" 'Ctrl + n', etc. navigates and selects suggestions
+" 'Esc' closes the suggestion box
+inoremap <silent><expr> <c-space> coc#refresh()
