@@ -34,6 +34,6 @@
 [github]
   user = mdb
 [core]
-  editor = /usr/local/bin/nvim
+  editor = vim
 [init]
   defaultBranch = main
