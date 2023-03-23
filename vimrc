@@ -87,6 +87,7 @@ au BufNewFile,BufRead Rakefile set syn=ruby
 au BufNewFile,BufRead Gemfile set syn=ruby
 au BufNewFile,BufRead config.ru set syn=ruby
 au BufNewFile,BufRead Vagrantfile set syn=ruby
+au BufNewFile,BufRead Brewfile set syn=ruby
 au BufNewFile,BufRead *.builder set syn=ruby
 au BufNewFile,BufRead *.jbuilder set syn=ruby
 au BufNewFile,BufRead *.pp set syn=ruby
