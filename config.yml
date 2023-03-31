@@ -1,20 +1,22 @@
-# gh-dash config
-# https://github.com/dlvhdr/gh-dash
-# Typically lives in ~/Library/Application\ Support/gh-dash on Mac OS
+# gh-dash configuration
 prSections:
-- title: My Pull Requests
+- title: Mine
   filters: is:open author:@me
-- title: Needs My Review
+- title: Requested reviews
   filters: is:open review-requested:@me
-- title: GTA Team PRs
-  filters: is:open type:pr label:gta-project
-- title: Involves me
-  filters: type:pr involves:@me
+- title: Involved/open
+  filters: is:open involves:@me
+- title: Involved/closed
+  filters: is:closed involves:@me
 issuesSections:
-- title: Created
+- title: My Issues
   filters: is:open author:@me
 - title: Assigned
   filters: is:open assignee:@me
+- title: Involved/open
+  filters: is:open involves:@me
+- title: Involved/closed
+  filters: is:closed involves:@me
 defaults:
   preview:
     open: true
@@ -22,3 +24,36 @@ defaults:
   prsLimit: 20
   issuesLimit: 20
   view: prs
+  layout:
+    prs:
+      updatedAt:
+        width: 7
+      repo:
+        width: 15
+      author:
+        width: 15
+      assignees:
+        width: 20
+        hidden: true
+      base:
+        width: 15
+        hidden: true
+      lines:
+        width: 16
+    issues:
+      updatedAt:
+        width: 7
+      repo:
+        width: 15
+      creator:
+        width: 10
+      assignees:
+        width: 20
+        hidden: true
+  refetchIntervalMinutes: 30
+keybindings:
+  issues: []
+  prs: []
+repoPaths: {}
+pager:
+  diff: ""
