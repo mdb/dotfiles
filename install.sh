@@ -15,6 +15,7 @@ fi
 
 mv "${HOME}/.bashrc" "${HOME}/.bashrc.bak" 2>/dev/null
 mv "${HOME}/.zshrc" "${HOME}/.zshrc.bak" 2>/dev/null
+mv "${HOME}/.gitconfig" "${HOME}/.gitconfig.bak" 2>/dev/null
 
 DOTFILES=${HOME}/dotfiles
 
@@ -31,10 +32,10 @@ ln -s "${DOTFILES}/jshintrc" "${HOME}/.jshintrc"
 ln -s "${DOTFILES}/init.vim" "${HOME}/.config/nvim/init.vim"
 ln -s "${DOTFILES}/coc-settings.json" "${HOME}/.config/nvim/coc-settings.json"
 
-if [ ! -d "${HOME}/bin" ]; then
-  mkdir -p "${HOME}/bin";
-fi
+mv "${HOME}/.config/gh-dash/config.yml" "${HOME}/.config/gh-dash/config.yml.bak"
+ln -s "${DOTFILES}/config.yml" "${HOME}/.config/gh-dash/config.yml"
 
+mkdir -p "${HOME}/bin"
 ln -s "${DOTFILES}/aliases" "${HOME}/bin/aliases"
 
 # install vim-plug
