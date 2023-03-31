@@ -78,12 +78,8 @@ source $ZSH/oh-my-zsh.sh
 # add go to PATH
 # export PATH=$PATH:/usr/local/opt/go/libexec/bin
 
-# NOTE: disabled temporarily; waiting to see if it's still necessary
-# set GOPATH
-# export GOPATH=~/dev/go
+export GOPATH=~/go
 
-# NOTE: disabled temporarily; waiting to see if it's still necessary
-# add GOPATH/bin to PATH
 export PATH=$PATH:$GOPATH/bin
 
 # NOTE: disabled temporarily; waiting to see if it's still necessary
