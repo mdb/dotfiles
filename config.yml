@@ -8,6 +8,10 @@ prSections:
   filters: is:open involves:@me
 - title: Involved/closed
   filters: is:closed involves:@me
+- title: mdb/open
+  filters: is:open user:mdb
+- title: samsara/open
+  filters: is:open org:samsara-dev
 issuesSections:
 - title: My Issues
   filters: is:open author:@me
@@ -17,6 +21,8 @@ issuesSections:
   filters: is:open involves:@me
 - title: Involved/closed
   filters: is:closed involves:@me
+- title: mdb/open
+  filters: is:open user:mdb
 defaults:
   preview:
     open: true
