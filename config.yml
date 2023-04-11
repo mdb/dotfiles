@@ -12,6 +12,8 @@ prSections:
   filters: is:open user:mdb
 - title: samsara/open
   filters: is:open org:samsara-dev
+- title: samsara/closed
+  filters: is:closed org:samsara-dev
 issuesSections:
 - title: My Issues
   filters: is:open author:@me
