@@ -1,19 +1,17 @@
 # gh-dash configuration
 prSections:
 - title: Mine
-  filters: is:open author:@me
-- title: Requested reviews
-  filters: is:open review-requested:@me
-- title: Involved/open
-  filters: is:open involves:@me
-- title: Involved/closed
-  filters: is:closed involves:@me
+  filters: author:@me
+- title: Review requested
+  filters: review-requested:@me
+- title: Involved
+  filters: involves:@me
 - title: mdb/open
-  filters: is:open user:mdb
-- title: samsara/open
-  filters: is:open org:samsara-dev
-- title: samsara/closed
-  filters: is:closed org:samsara-dev
+  filters: user:mdb
+- title: Plat Infra
+  filters: org:samsara-dev author:mdb author:trumant author:nandittiku author:jsm author:fordc-99 author:zdylag author:Shivamyadav2512 author:tomateos author:eliot1019 author:charleenwang author:xuantang-ss author:justiny98
+- title: samsara-dev
+  filters: org:samsara-dev
 issuesSections:
 - title: My Issues
   filters: is:open author:@me
