@@ -10,8 +10,10 @@ prSections:
   filters: user:mdb
 - title: Plat Infra
   filters: org:samsara-dev author:mdb author:trumant author:nandittiku author:jsm author:fordc-99 author:zdylag author:Shivamyadav2512 author:tomateos author:eliot1019 author:charleenwang author:xuantang-ss author:justiny98
-- title: samsara-dev
-  filters: org:samsara-dev
+- title: samsara-dev Open
+  filters: is:open org:samsara-dev
+- title: samsara-dev Closed
+  filters: is:closed org:samsara-dev
 issuesSections:
 - title: My Issues
   filters: is:open author:@me
