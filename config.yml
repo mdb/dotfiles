@@ -9,7 +9,7 @@ prSections:
 - title: mdb/open
   filters: user:mdb
 - title: Plat Infra
-  filters: org:samsara-dev author:mdb author:trumant author:nandittiku author:jsm author:fordc-99 author:zdylag author:Shivamyadav2512 author:tomateos author:eliot1019 author:charleenwang author:xuantang-ss author:justiny98
+  filters: org:samsara-dev author:mdb author:trumant author:nandittiku author:jsm author:fordc-99 author:zdylag author:Shivamyadav2512 author:tomateos author:eliot1019 author:charleenwang author:xuantang-ss author:justiny98 author:ianvernon
 - title: samsara-dev Open
   filters: is:open org:samsara-dev
 - title: samsara-dev Closed
