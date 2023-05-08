@@ -173,7 +173,7 @@ set ignorecase
 nmap <silent> ,/ :nohlsearch<CR>
 
 " fzf
-set rtp+=/usr/local/opt/fzf
+set rtp+=/opt/homebrew/bin/fzf
 
 " coc
 " 'Ctrl + space' (in insert) opens suggestions
