@@ -7,6 +7,8 @@ Plug 'kien/rainbow_parentheses.vim'
 Plug 'scrooloose/nerdtree'
 Plug 'dense-analysis/ale'
 Plug 'tpope/vim-sleuth'
+Plug 'mileszs/ack.vim'
+
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 " Scala
@@ -27,6 +29,12 @@ Plug 'ekalinin/Dockerfile.vim'
 " Go
 Plug 'benmills/vim-golang-alternate'
 Plug 'fatih/vim-go'
+" Configure vim-go :GoDef behavior a la
+" https://github.com/fatih/vim-go/issues/494#issuecomment-124556989
+au FileType go nmap <Leader>ds <Plug>(go-def-split)
+au FileType go nmap <Leader>dv <Plug>(go-def-vertical)
+" make GoDef open in new tab (\dt)
+au FileType go nmap <Leader>dt <Plug>(go-def-tab)
 
 " HCL
 Plug 'fatih/vim-hclfmt'
