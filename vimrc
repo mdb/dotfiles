@@ -9,7 +9,8 @@ Plug 'dense-analysis/ale'
 Plug 'tpope/vim-sleuth'
 Plug 'mileszs/ack.vim'
 
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
+" Disabled; COC seemingly struggles in large monorepos
+" Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 " Scala
 Plug 'derekwyatt/vim-scala'
@@ -179,4 +180,5 @@ set rtp+=/opt/homebrew/bin/fzf
 " 'Ctrl + space' (in insert) opens suggestions
 " 'Ctrl + n', etc. navigates and selects suggestions
 " 'Esc' closes the suggestion box
-inoremap <silent><expr> <c-space> coc#refresh()
+" disabled; COC struggles in large monorepos
+" inoremap <silent><expr> <c-space> coc#refresh()
