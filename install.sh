@@ -23,6 +23,7 @@ if [ ! -d "${HOME}/.config/nvim" ]; then
   mkdir -p "${HOME}/.config/nvim";
 fi
 
+ln -s "${DOTFILES}/rgignore" "${HOME}/.rgignore"
 ln -s "${DOTFILES}/zshrc" "${HOME}/.zshrc"
 ln -s "${DOTFILES}/oh-my-zsh/themes/mdb.zsh-theme" "${HOME}/.oh-my-zsh/themes/mdb.zsh-theme"
 ln -s "${DOTFILES}/tmux.conf" "${HOME}/.tmux.conf"
