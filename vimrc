@@ -82,6 +82,7 @@ match OverLength /\%81v./
 
 " 80-column line
 set colorcolumn=81
+set textwidth=80
 highlight! link ColorColumn CursorColumn
 
 " Show dotfiles in NERDTree
