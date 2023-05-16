@@ -24,6 +24,7 @@ if [ ! -d "${HOME}/.config/nvim" ]; then
 fi
 
 ln -s "${DOTFILES}/rgignore" "${HOME}/.rgignore"
+ln -s "${DOTFILES}/rgconfig" "${HOME}/.rgconfig"
 ln -s "${DOTFILES}/zshrc" "${HOME}/.zshrc"
 ln -s "${DOTFILES}/oh-my-zsh/themes/mdb.zsh-theme" "${HOME}/.oh-my-zsh/themes/mdb.zsh-theme"
 ln -s "${DOTFILES}/tmux.conf" "${HOME}/.tmux.conf"

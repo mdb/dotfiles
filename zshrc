@@ -95,10 +95,13 @@ source ~/bin/aliases
 # ZSH_DISABLE_COMPFIX=true
 
 export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+# Load nvm
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+# Load nvm bash_completion
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
 
 if type rg &> /dev/null; then
+  export RIPGREP_CONFIG_PATH="${HOME}/.rgconfig"
   export FZF_DEFAULT_COMMAND='rg --files --hidden'
   export FZF_DEFAULT_OPTS="-m --height 50% --layout=reverse --border --inline-info \
   --preview-window=:hidden \
@@ -107,3 +110,9 @@ if type rg &> /dev/null; then
 fi
 
 eval "$(direnv hook zsh)"
+
+# uses fzf autocompletion and key bindings
+# The .fzf.zsh file itself is installed by running:
+# /opt/homebrew/opt/fzf/install
+# ...and following the prompts
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
