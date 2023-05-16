@@ -74,25 +74,14 @@ plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
 
-# NOTE: disabled temporarily; waiting to see if it's still necessary
-# add go to PATH
-# export PATH=$PATH:/usr/local/opt/go/libexec/bin
-
 export GOPATH=~/go
 
 export PATH=$PATH:$GOPATH/bin
 
-# NOTE: disabled temporarily; waiting to see if it's still necessary
-# homebrew wants this
-# export PATH="/usr/local/sbin:$PATH"
-
-# add aliases to path
+# add ~/bin utilities to path
 export PATH=$PATH:~/bin
 
 source ~/bin/aliases
-
-# NOTE: disabled temporarily; waiting to see if it's still necessary
-# ZSH_DISABLE_COMPFIX=true
 
 export NVM_DIR="$HOME/.nvm"
 # Load nvm
