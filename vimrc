@@ -104,9 +104,12 @@ au BufNewFile,BufRead *.pp set syn=ruby
 au BufNewFile,BufRead *.ftl set syn=ftl
 au BufNewFile,BufRead *.pde set syn=pde
 au BufNewFile,BufRead *.json set syn=javascript
+au BufNewFile,BufRead *jshintrc set syn=javascript
 au BufNewFile,BufRead *.cjs set syn=javascript
 au BufNewFile,BufRead *.bats set syn=sh
 au BufNewFile,BufRead *.tfvars set syn=tf
+au BufNewFile,BufRead *gitconfig set syn=toml
+au BufNewFile,BufRead aliases set syn=sh
 
 " rainbow_parentheses.vim
 autocmd VimEnter * RainbowParenthesesToggle
@@ -127,7 +130,7 @@ let g:rbpt_colorpairs = [
 let g:rbpt_colorpairs = g:rbpt_colorpairs + g:rbpt_colorpairs
 let g:rbpt_max = len(g:rbpt_colorpairs)
 
-" CTRL-P opens in tab
+" ctrl-p opens in tab
 let g:ctrlp_prompt_mappings = {
   \ 'AcceptSelection("e")': [],
   \ 'AcceptSelection("t")': ['<cr>', '<c-m>'],
@@ -176,6 +179,10 @@ nmap <silent> ,/ :nohlsearch<CR>
 
 " fzf
 set rtp+=/opt/homebrew/bin/fzf
+" alias :BCommits (provided by junegunn/fzf.vim) to :Bg
+:command Bg BCommits
+" alias :Files (provided by junegunn/fzf.vim) to :F
+:command F Files
 
 " coc
 " 'Ctrl + space' (in insert) opens suggestions
