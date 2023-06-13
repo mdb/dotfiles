@@ -10,6 +10,8 @@ prSections:
   filters: involves:@me
 - title: Infra Plat
   filters: org:samsara-dev author:mdb author:trumant author:nandittiku author:jsm author:fordc-99 author:zdylag author:Shivamyadav2512 author:tomateos author:eliot1019 author:charleenwang author:xuantang-ss author:justiny98 author:ianvernon author:abarya author:bharling author:cirpo
+- title: OPX
+  filters: org:samsara-dev author:mdb author:Shivamyadav2512 author:abarya author:bharling author:cirpo
 - title: samsara-dev Open
   filters: is:open org:samsara-dev
 - title: samsara-dev Closed
