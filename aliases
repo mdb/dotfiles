@@ -5,3 +5,16 @@ alias awswhoami="aws sts get-caller-identity"
 alias lens="/Applications/Lens.app/Contents/MacOS/Lens"
 alias netshoot="kubectl run tmp-shell-mdb --rm -i --tty --image nicolaka/netshoot -- /bin/bash"
 alias k="kubectl"
+
+# gitconfig sets the git config user.email to $1 within the current git
+# directory.
+gitconfig() {
+  git config user.email $1
+}
+
+# findir recursively searches from current working directory for directory paths
+# containing the $1 string; ignore case.
+# Example: findir foo
+findir() {
+  find . -type d -iname "*$1*" -print
+}
