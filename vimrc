@@ -39,6 +39,8 @@ au FileType go nmap <Leader>ds <Plug>(go-def-split)
 au FileType go nmap <Leader>dv <Plug>(go-def-vertical)
 " make GoDef open in new tab (\dt)
 au FileType go nmap <Leader>dt <Plug>(go-def-tab)
+" alias :GoTestFunc (provided by vim-go) to :Gtf
+:command Gtf GoTestFunc
 
 " HCL
 Plug 'fatih/vim-hclfmt'
@@ -84,6 +86,8 @@ highlight! link ColorColumn CursorColumn
 
 " Show dotfiles in NERDTree
 let NERDTreeShowHidden=1
+" alias :NERDTreeFind (provided by nerdtree) to :Ntf
+:command Ntf NERDTreeFind
 
 " tab navigation & creation
 " C- represents the Control key
