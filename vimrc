@@ -113,6 +113,7 @@ au BufNewFile,BufRead *.cjs set syn=javascript
 au BufNewFile,BufRead *.bats set syn=sh
 au BufNewFile,BufRead *.tfvars set syn=tf
 au BufNewFile,BufRead *gitconfig set syn=toml
+au BufNewFile,BufRead *.spc set syn=hcl # steampipe configuration files
 au BufNewFile,BufRead aliases set syn=sh
 
 " rainbow_parentheses.vim
