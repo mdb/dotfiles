@@ -12,6 +12,9 @@ Plug 'dense-analysis/ale'
 Plug 'tpope/vim-sleuth'
 Plug 'mileszs/ack.vim'
 
+" GH copilot (requires license)
+" Plug 'github/copilot.vim'
+
 " Disabled; COC seemingly struggles in large monorepos
 " Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
@@ -108,6 +111,7 @@ au BufNewFile,BufRead *.pp set syn=ruby
 au BufNewFile,BufRead *.ftl set syn=ftl
 au BufNewFile,BufRead *.pde set syn=pde
 au BufNewFile,BufRead *.json set syn=javascript
+au BufNewFile,BufRead *.tfstate set syn=javascript
 au BufNewFile,BufRead *jshintrc set syn=javascript
 au BufNewFile,BufRead *.cjs set syn=javascript
 au BufNewFile,BufRead *.bats set syn=sh
