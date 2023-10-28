@@ -47,3 +47,4 @@ curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
 vim +PlugInstall +qall
 vim +GoInstallBinaries +qall
 vim +GoUpdateBinaries +qall
+vim :Copilot setup
