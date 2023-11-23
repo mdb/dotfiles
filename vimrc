@@ -59,7 +59,10 @@ Plug 'wavded/vim-stylus'
 " powershell
 Plug 'PProvost/vim-ps1'
 
+" \gh opens link to current line in GitHub via web browser
 Plug 'ruanyl/vim-gh-line'
+Plug 'tpope/vim-fugitive'
+nnoremap <space>gb :Git blame<Space>
 
 call plug#end()
 
@@ -117,7 +120,8 @@ au BufNewFile,BufRead *.cjs set syn=javascript
 au BufNewFile,BufRead *.bats set syn=sh
 au BufNewFile,BufRead *.tfvars set syn=tf
 au BufNewFile,BufRead *gitconfig set syn=toml
-au BufNewFile,BufRead *.spc set syn=hcl # steampipe configuration files
+au BufNewFile,BufRead *.spc set syn=hcl # steampipe
+au BufNewFile,BufRead *.sp set syn=hcl # steampipe
 au BufNewFile,BufRead aliases set syn=sh
 
 " rainbow_parentheses.vim
