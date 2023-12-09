@@ -105,3 +105,6 @@ eval "$(direnv hook zsh)"
 # /opt/homebrew/opt/fzf/install
 # ...and following the prompts
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+# https://github.com/keybase/keybase-issues/issues/2798
+export GPG_TTY=$(tty)
