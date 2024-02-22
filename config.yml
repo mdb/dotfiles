@@ -2,37 +2,39 @@
 # https://docs.github.com/en/account-and-profile/managing-subscriptions-and-notifications-on-github/viewing-and-triaging-notifications/managing-notifications-from-your-inbox
 # https://docs.github.com/en/search-github/searching-on-github/searching-issues-and-pull-requests
 prSections:
-- title: Mine
-  filters: author:@me
-- title: Review requested
-  filters: review-requested:@me
-- title: Involved
-  filters: involves:@me
-- title: Infra Plat
-  filters: org:samsara-dev author:vsirohi-samsara author:mdb author:trumant author:nandittiku author:jsm author:fordc-99 author:zdylag author:Shivamyadav2512 author:eliot1019 author:xuantang-ss author:justiny98 author:ianvernon author:abarya author:bharling author:cirpo author:rashmijha1 author:EmmettTan author:jahnavi-srinivasan author:btajuddin
-- title: OPX
-  filters: org:samsara-dev author:mdb author:Shivamyadav2512 author:abarya author:bharling author:cirpo
-- title: DevExp
-  filters: org:samsara-dev team-review-requested:samsara-dev/developer-experience
-- title: samsara-dev Open
-  filters: is:open org:samsara-dev
-- title: samsara-dev Closed
-  filters: is:closed org:samsara-dev
-- title: mdb/open
-  filters: user:mdb
-- title: rando
-  filters: org:samsara-dev author:trumant
+  - title: Mine
+    filters: author:@me
+  - title: Review requested
+    filters: review-requested:@me
+  - title: OPX review requested
+    filters: team-review-requested:samsara-dev/opx
+  - title: Involved
+    filters: involves:@me
+  - title: Infra Plat
+    filters: org:samsara-dev author:vsirohi-samsara author:mdb author:trumant author:nandittiku author:jsm author:fordc-99 author:zdylag author:Shivamyadav2512 author:eliot1019 author:xuantang-ss author:justiny98 author:ianvernon author:abarya author:bharling author:cirpo author:rashmijha1 author:EmmettTan author:jahnavi-srinivasan author:btajuddin
+  - title: OPX
+    filters: org:samsara-dev author:mdb author:Shivamyadav2512 author:abarya author:bharling author:cirpo
+  - title: DevExp
+    filters: org:samsara-dev team-review-requested:samsara-dev/developer-experience
+  - title: samsara-dev Open
+    filters: is:open org:samsara-dev
+  - title: samsara-dev Closed
+    filters: is:closed org:samsara-dev
+  - title: mdb/open
+    filters: user:mdb
+  - title: rando
+    filters: org:samsara-dev author:trumant
 issuesSections:
-- title: My Issues
-  filters: is:open author:@me
-- title: Assigned
-  filters: is:open assignee:@me
-- title: Involved/open
-  filters: is:open involves:@me
-- title: Involved/closed
-  filters: is:closed involves:@me
-- title: mdb/open
-  filters: is:open user:mdb
+  - title: My Issues
+    filters: is:open author:@me
+  - title: Assigned
+    filters: is:open assignee:@me
+  - title: Involved/open
+    filters: is:open involves:@me
+  - title: Involved/closed
+    filters: is:closed involves:@me
+  - title: mdb/open
+    filters: is:open user:mdb
 defaults:
   preview:
     open: true
