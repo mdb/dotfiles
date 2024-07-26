@@ -10,6 +10,13 @@
   ll = log --stat --abbrev-commit
   d = diff --color-words
   tree = log --graph --all --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(bold white). %an%C(reset)%C(bold yellow)%d%C(reset)' --abbrev-commit --date=relative
+  p = push origin $(git rev-parse --abbrev-ref HEAD)
+  ne = commit --amend --no-edit
+[filter "lfs"]
+  clean = git-lfs clean -- %f
+  smudge = git-lfs smudge -- %f
+  process = git-lfs filter-process
+  required = true
 [web]
   browser = open
 [gui]
@@ -35,5 +42,13 @@
   user = mdb
 [core]
   editor = vim
+  repositoryformatversion = 0
+  filemode = true
+  bare = false
+  logallrefupdates = true
+  ignorecase = true
+  precomposeunicode = true
+  untrackedcache = false
+  fsmonitor = false
 [init]
   defaultBranch = main
