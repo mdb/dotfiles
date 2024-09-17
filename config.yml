@@ -11,7 +11,7 @@ prSections:
   - title: Involved
     filters: involves:@me
   - title: Infra Plat
-    filters: org:samsara-dev author:vsirohi-samsara author:trumant author:nandittiku author:jsm author:fordc-99 author:zdylag author:eliot1019 author:xuantang-ss author:justiny98 author:ianvernon author:rashmijha1 author:EmmettTan author:jahnavi-srinivasan author:btajuddin
+    filters: org:samsara-dev author:vsirohi-samsara author:trumant author:nandittiku author:jsm author:eliot1019 author:justiny98 author:ianvernon author:rashmijha1 author:EmmettTan author:jahnavi-srinivasan author:dburger4 author:btajuddin
   - title: OPX
     filters: org:samsara-dev author:tylerbrewer2 author:mdb author:Shivamyadav2512 author:bharling author:cirpo author:nina-nee author:rahulv25 author:Baicheng-MiQ
   - title: DevExp
