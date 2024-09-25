@@ -69,6 +69,10 @@ defaults:
         width: 20
         hidden: true
   refetchIntervalMinutes: 30
+theme:
+  ui:
+    table:
+      compact: true
 keybindings:
   issues: []
   prs: []
