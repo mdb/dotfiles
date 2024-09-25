@@ -43,21 +43,6 @@ defaults:
   issuesLimit: 20
   view: prs
   layout:
-    prs:
-      updatedAt:
-        width: 7
-      repo:
-        width: 15
-      author:
-        width: 15
-      assignees:
-        width: 20
-        hidden: true
-      base:
-        width: 15
-        hidden: true
-      lines:
-        width: 16
     issues:
       updatedAt:
         width: 7
