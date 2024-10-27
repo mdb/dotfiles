@@ -39,7 +39,7 @@ defaults:
   preview:
     open: true
     width: 50
-  prsLimit: 20
+  prsLimit: 40
   issuesLimit: 20
   view: prs
   layout:
