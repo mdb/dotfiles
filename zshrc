@@ -116,5 +116,4 @@ eval "$(direnv hook zsh)"
 # https://github.com/keybase/keybase-issues/issues/2798
 export GPG_TTY=$(tty)
 
-# vi key bindings
-#set -o vi
+export NVIM_APPNAME=mdb.nvim nvim
