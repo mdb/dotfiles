@@ -75,6 +75,7 @@ plugins=(
   vi-mode
 )
 
+# https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/vi-mode
 export VI_MODE_SET_CURSOR=true
 export VI_MODE_CURSOR_INSERT=5
 
