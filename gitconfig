@@ -12,10 +12,12 @@
   tree = log --graph --all --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(bold white). %an%C(reset)%C(bold yellow)%d%C(reset)' --abbrev-commit --date=relative
   p = push origin $(git rev-parse --abbrev-ref HEAD)
   ne = commit --amend --no-edit
+  #force-fetch '!forceFetch () { b=$1; git fetch origin +refs/heads/$b:refs/remotes/origin/$b $b:$b; git remote set-branches --add origin $b; git branch --set-upstream-to=origin/$b $b; }; forceFetch'
   # Copy last commit message to clipboard without leading indentation
   # This is useful for quickly grabbing the commit message to paste as the
   # primary comment on a GitHub pull request.
   cpm = ! git log --no-walk --format=%B | pbcopy
+  adda = ! git ls-files ${1:-.} --modified | xargs git add
 [filter "lfs"]
   clean = git-lfs clean -- %f
   smudge = git-lfs smudge -- %f
@@ -45,7 +47,7 @@
 [github]
   user = mdb
 [core]
-  editor = vim
+  editor = nvim
   repositoryformatversion = 0
   filemode = true
   bare = false
@@ -54,5 +56,8 @@
   precomposeunicode = true
   untrackedcache = false
   fsmonitor = false
+  pager = less -FX
 [init]
   defaultBranch = main
+[url "git@github.com:"]
+  insteadOf = https://github.com/
