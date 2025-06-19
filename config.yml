@@ -9,7 +9,7 @@ prSections:
   - title: Involved
     filters: involves:@me
   - title: OPX
-    filters: org:samsara-dev author:tylerbrewer2 author:mdb author:Shivamyadav2512 author:bharling author:cirpo author:nina-nee author:rahulv25 author:Baicheng-MiQ
+    filters: org:samsara-dev author:tylerbrewer2 author:Shivamyadav2512 author:bharling author:cirpo author:nina-nee author:rahulv25 author:Baicheng-MiQ
   - title: OPX review requested
     filters: team-review-requested:samsara-dev/opx
   - title: Infra Plat
