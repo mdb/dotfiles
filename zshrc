@@ -117,3 +117,11 @@ eval "$(direnv hook zsh)"
 export GPG_TTY=$(tty)
 
 export NVIM_APPNAME=mdb.nvim nvim
+
+export TIMEFMT=$'real\t%E\nuser\t%U\nsys\t%S'
+
+# opencode
+export PATH="$HOME/.opencode/bin:$PATH"
+
+# cursor CLI
+export PATH="$HOME/.local/bin:$PATH"
