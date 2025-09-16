@@ -9,11 +9,11 @@ prSections:
   - title: Involved
     filters: involves:@me
   - title: OPX
-    filters: org:samsara-dev author:tylerbrewer2 author:Shivamyadav2512 author:bharling author:cirpo author:nina-nee author:rahulv25 author:Baicheng-MiQ
+    filters: org:samsara-dev author:tylerbrewer2 author:Shivamyadav2512 author:bharling author:cirpo author:nina-nee author:rahulv25 author:mmatecki
   - title: OPX review requested
     filters: team-review-requested:samsara-dev/opx
   - title: Infra Plat
-    filters: org:samsara-dev author:vsirohi-samsara author:trumant author:nandittiku author:jsm author:eliot1019 author:justiny98 author:ianvernon author:rashmijha1 author:EmmettTan author:jahnavi-srinivasan author:dburger4 author:btajuddin
+    filters: org:samsara-dev author:vsirohi-samsara author:nandittiku author:jsm author:eliot1019 author:justiny98 author:ianvernon author:rashmijha1 author:EmmettTan author:jahnavi-srinivasan author:dburger4 author:btajuddin
   - title: samsara-dev Open
     filters: is:open org:samsara-dev
   - title: samsara-dev Closed
